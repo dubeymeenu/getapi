@@ -31,7 +31,7 @@ const upload = multer({ storage:storage }).single("pimage");
                 pname:req.body.pname,
                 pdesc:req.body.pdesc,
                 pprice:req.body.pprice,
-                pimage:"http://localhost:4000//uploads/"+req.file.filename
+                pimage:"https://getapi-1lx2.onrender.com//uploads/"+req.file.filename
             })
              newImage.save()
              resp.send("File Uploaded")
